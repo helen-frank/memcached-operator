@@ -1,0 +1,9 @@
+domain: helen.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: operatorstudent
+repo: github.com/helen-frank/memcached-operator
+version: "3"
