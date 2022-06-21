@@ -4,6 +4,16 @@ layout:
 plugins:
   manifests.sdk.operatorframework.io/v2: {}
   scorecard.sdk.operatorframework.io/v2: {}
-projectName: operatorstudent
+projectName: memcached-operator
 repo: github.com/helen-frank/memcached-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: helen.com
+  group: cache
+  kind: Memcached
+  path: github.com/helen-frank/memcached-operator/api/v1alpha1
+  version: v1alpha1
 version: "3"
